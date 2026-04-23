@@ -3,9 +3,10 @@ using namespace std;
 // Incluimos la clase
 #include "Person.cpp"
 int main() {
-Person myObj;
-// myObj.name = "John"; // ERROR (privado)
-myObj.setName("John"); // correcto usando setter
-cout << myObj.getName() << endl; // correcto usando getter
+Person myObj, myObj2;
+myObj2.setName("Jane");
+myObj.setName("John"); 
+cout << myObj.getName() << endl;
+cout << myObj2.getName() << endl;
 return 0;
 }
